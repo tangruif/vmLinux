@@ -6,7 +6,7 @@
 	* ubuntu 14.04
 	* qemu 2.0.0
 #### 下载
-* git clone git@github.com:tangruif/vmLinux.git
+* git clone --depth 1 git@github.com:tangruif/vmLinux.git
 * sudo apt-get install qemu
 #### 运行
 1. 在虚拟机中运行mini linux系统

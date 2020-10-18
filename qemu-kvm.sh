@@ -1,8 +1,9 @@
 qemu-system-x86_64 \
 	-kernel bzImage \
 	-nographic \
+	-enable-kvm \
 	-m 1024M \
-	-net user  -net nic,model=e1000 \
+	-net nic -net user \
 	-initrd rootfs.cpio.gz \
 	-append "console=ttyS0 rdinit=/linuxrc nokaslr" \
 	-s 
